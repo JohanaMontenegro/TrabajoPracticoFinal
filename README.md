@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # proyecto-final
 
 ## Project setup
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# TrabajoPracticoFinal
+>>>>>>> 8bdec89a46c4277ba7e76bf14445a4f41ceea61f
