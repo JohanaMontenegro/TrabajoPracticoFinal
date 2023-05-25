@@ -1,5 +1,3 @@
-
-
 <template>
     <div id="content" class="row">
     <div>
