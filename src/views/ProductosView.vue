@@ -7,7 +7,7 @@
     </div>
 </template>
 <script>
-import ProductosComponent from "../components/Productos.vue";
+import ProductosComponent from "../components/ProductosC.vue";
 export default {
     name: "ProductoComponent",
     components: {
@@ -20,4 +20,3 @@ export default {
     text-align: center;
 }
 </style>
-Aida Herrera Vilar ha pausado sus n

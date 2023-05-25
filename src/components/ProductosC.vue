@@ -1,4 +1,4 @@
-template>
+<template>
     <div>
         <ProductosCard v-for="producto in productos" :key="producto.id" :producto="producto" @actualizarProducto="actualizarProducto($event)" :actualizar=this.actualizar></ProductosCard>
     </div>
