@@ -1,17 +1,23 @@
 <template>
-    <div id="content" class="d-flex flex-row col-9 ">
-    <div>
-        <h1 class="animate__animated animate__zoomIn"> Productos </h1>
+    <div id="content">
+        <div>
+            <h1 class="animate__animated animate__zoomIn"> Productos </h1>
+            <ProductosComponent/>
+        </div>
     </div>
-</div>
 </template>
 <script>
-export default{
-    name:'ProductosView'
+import ProductosComponent from "../components/Productos.vue";
+export default {
+    name: "ProductoComponent",
+    components: {
+        ProductosComponent
+    },
 }
 </script>
 <style>
-#content{
-text-align: center;
+#content {
+    text-align: center;
 }
 </style>
+Aida Herrera Vilar ha pausado sus n
