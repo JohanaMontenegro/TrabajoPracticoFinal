@@ -1,9 +1,8 @@
 
 <template>
   <div class="row">
-    <div class="col-10"></div>
-    <div class="nav mx-3 ">
-      <nav class="navbar navbar-expand-lg rounded border border-secondary my-3 col-11">
+    <div class="col-11">
+      <nav class="navbar navbar-expand-lg rounded border border-secondary my-3">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
           aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,6 +35,21 @@
       <div class="sidebar">
         <div>
           <section class="home-section">
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+              aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+              id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <p>Try scrolling the rest of the page to see this option in action.</p>
+              </div>
+            </div>
+
             <div class="home-content">
               <box-icon name='menu'></box-icon>
               <span class="text">Menú</span>
@@ -50,11 +64,6 @@
               <a href="user">Ingresar</a>
             </li>
             <li>
-              <box-icon name='search-alt'></box-icon>
-              <a href="search">Buscar</a>
-            </li>
-            <li>
-
               <a href="black-mode">Modo Oscuro</a>
               <box-icon name='toggle-left'></box-icon>
             </li>
@@ -64,26 +73,35 @@
     </div>
   </div>
   <router-view></router-view>
-  <div id="content" class="col-9 rounded border border-primary">
-    <footer>
-      <div id="pagos">
-        <ol class=" text-center col-4">
-          <li>
-            <h6><strong>Medios de Pago Habilitados</strong></h6>
-          </li>
-          <li><strong>Tarjetas de Crédito y Debito</strong></li>
-          <li><strong>Transferencia Bancaria</strong></li>
-          <li><strong>Efectivo en Rapipago /PagoFácil</strong></li>
-        </ol>
-        <div class="d-flex flex-row d-inline-flex p-2 bd-highlight mb-3 w-100">
-          <img src="./assets/logosmp.png" alt="" class=" center-block rounded border border-tertiary">
-        </div>
-        <div>
-        <p>Copyright 2023 © TodoElectro eCommerce - Todos los derechos reservados - Desarrollado por Aida y Johana.</p>
+  <div class="row">
+    <div class="col-11">
+      <div id="content" class="rounded border border-primary">
+        <footer>
+          <div id="pagos">
+            <ol class=" text-center col-4 mt-3">
+              <li>
+                <h6><strong>Medios de Pago Habilitados</strong></h6>
+              </li>
+              <li><strong>Tarjetas de Crédito y Debito</strong></li>
+              <li><strong>Transferencia Bancaria</strong></li>
+              <li><strong>Efectivo en Rapipago /PagoFácil</strong></li>
+            </ol>
+            <div class="d-flex flex-row d-inline-flex p-1 bd-highlight w-100">
+              <img src="./assets/logosmp.png" alt="" class="rounded border border-tertiary">
+            </div>
+            <div id="envios" class="d-flex flex row d-inline-flex bd-highlight w-100">
+
+            </div>
+            <div class="text-center">
+              <p>Copyright 2023 © TodoElectro eCommerce - Todos los derechos reservados - Desarrollado por Aida y Johana.
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
+    </div>
   </div>
-  </footer>
-</div></template>
+</template>
 
 <script>
 
@@ -158,18 +176,13 @@ form {
 
 }
 
-.left-content {
-  width: 140px;
-}
-
 nav {
   background: rgba(216, 211, 211, 0.637);
 }
 
 #content {
   background-color: rgb(198, 213, 255);
-  margin-left: 280px;
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 #pagos {
