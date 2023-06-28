@@ -6,9 +6,11 @@
                 <div class="card-group">
                     <ProductosComponent />
                 </div>
-                <div class="row custom-div col-9">
-                    <div class="col-3">
-                        <div class="col-2">
+                <div class="row custom-div col-11">
+                    <div class="col-4 d-flex flex-column">
+                        <h2 class="text-center">COMPUTACIÓN</h2>
+                        <div class="d-flex">
+                        <div class="col-5 me-3 bg-light">
                             <div>
                                 <p>En Stock</p>
                             </div>
@@ -22,12 +24,16 @@
                             </div>
                             <button>Comprar</button>
                         </div>
-                        <div class="col-2">
+                        <div class="col-5 bg-light">
+                        </div>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4 d-flex flex-column">
+                        <h2 class="text-center">CELULARES</h2>
+                        
                     </div>
-                    <div class="col-3">
+                    <div class="col-4 d-flex flex-column">
+                        <h2 class="text-center">ACCESORIOS</h2>
                     </div>
                 </div>
             </div>
@@ -46,42 +52,50 @@ export default {
 </script>
 
 <style>
+
 #content {
     text-align: center;
+   
 }
 
 .row {
     display: flex;
-    margin-left: 260px;
+    margin-left: 240px;
 }
 
 body {
     font-family: system-ui;
-    color: rgb(14, 1, 1);
+    color: rgb(0, 0, 0);
     text-align: center;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .custom-div {
     background: #f3ecbe;
-    height: 17rem;
+    height: 28rem;
     display: flex;
     justify-content: space-evenly;
-    margin-left: 150px;
+    margin-left: 60px;
 }
 
-.custom-div>.col-3 {
+.custom-div>.col-4 {
     background: #f2eaa0;
-    height: 98%;
-    border: 2px solid black;
-    width: 15rem;
+    height: 97%;
+    border: 1px solid black;
+    width: 18rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.custom-div>.col-3>.col-2 {
+.custom-div>.col-4>.col-5 {
     background: white;
-    width: 40%;
-    height: 50%;
 }
+
+.col-5>.me-3>.bg-light{
+    height: 100px;
+    width: 80rem;
+    }
+
 </style>
