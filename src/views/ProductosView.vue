@@ -9,7 +9,7 @@
                 <div class="row custom-div col-11">
                     <div class="col-4 d-flex flex-column">
                         <h2 class="text-center">COMPUTACIÓN</h2>
-                        <div class="d-flex">
+                        <div class="d-flex justify-content-between">
                         <div class="col-5 me-3 bg-light">
                             <div>
                                 <p>En Stock</p>
@@ -25,7 +25,7 @@
                             <button>Comprar</button>
                         </div>
                         <div class="col-5 bg-light">
-                        </div>
+                        </div>s
                         </div>
                     </div>
                     <div class="col-4 d-flex flex-column">
@@ -73,17 +73,17 @@ body {
 
 .custom-div {
     background: #f3ecbe;
-    height: 28rem;
     display: flex;
     justify-content: space-evenly;
     margin-left: 60px;
+    margin: 0;
+    width: 100%;
 }
 
 .custom-div>.col-4 {
     background: #f2eaa0;
     height: 97%;
     border: 1px solid black;
-    width: 18rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -97,5 +97,9 @@ body {
     height: 100px;
     width: 80rem;
     }
+
+img {
+    margin-left: 0;
+}
 
 </style>
