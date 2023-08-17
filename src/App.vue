@@ -57,13 +57,7 @@
       <div class="sidebar">
         <div>
           <section class="home-section">
-
-            <div class="home-content">
-              <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
-                <box-icon name='menu'></box-icon>
-              <span class="text">Menú</span>
-              </button>
-             </div>
+            <i class="name"> <img src="./assets/logoAzul.jpg" alt="logo" /></i>
           </section>
         </div>
         <div class="options">
@@ -154,12 +148,12 @@ li {
   text-decoration: none;
   text-align: center;
 }
-.name{
-  margin-top:100px;
+.name img{
+  border-radius:13px ;
+  margin-top:200px;
   display:flex;
-  padding: 20px 30px;
   align-items: center;
-  margin-left:14px;
+  margin-left:45px;
 }
 
 img {
@@ -204,7 +198,7 @@ header {
   margin-left: 200px;
   width: 100%;
   height: 30px;
-  display: flex;
+  display:block;
   align-items: center;
   position:fixed;
   top: 0;
