@@ -57,7 +57,13 @@
       <div class="sidebar">
         <div>
           <section class="home-section">
-            <i class="name"> <img src="./assets/logoAzul.jpg" alt="logo" /></i>
+
+            <div class="home-content">
+              <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
+                <box-icon name='menu'></box-icon>
+              <span class="text">Menú</span>
+              </button>
+             </div>
           </section>
         </div>
         <div class="options">
