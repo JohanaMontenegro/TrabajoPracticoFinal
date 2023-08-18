@@ -63,9 +63,15 @@ body {
 }
 
 .custom-div {
+    
     background: #f3ecbe;
     height: 17rem;
     display: flex;
+    justify-content: stretch;
+    margin-left: 70px;
+    margin: 0;
+    width: 100%;
+
     justify-content: space-evenly;
     margin-left: 150px;
 }
@@ -78,10 +84,24 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
 }
 
 .custom-div>.col-3>.col-2 {
     background: white;
+    border-color: #f2eaa0;
+    border-radius: 25px;
+ 
+}
+
+.col-4>.bg-light {
+    height: 100px;
+    width: 70rem;
+   
+}
+
+img {
+    margin-left: 0;
     width: 40%;
     height: 50%;
 }
