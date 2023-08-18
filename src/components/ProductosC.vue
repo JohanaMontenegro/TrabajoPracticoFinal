@@ -6,6 +6,7 @@
 
 <script>
 
+
 import ProductosCard from './ProductosCard.vue';
 
 export default {
@@ -16,6 +17,7 @@ export default {
     components: {
         ProductosCard
     },
+ 
     data() {
         return {
             productos: [],
@@ -39,4 +41,4 @@ export default {
         this.loadAPI();
     },
 }
-</script>
+</script> 
