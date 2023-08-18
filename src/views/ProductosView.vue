@@ -36,8 +36,7 @@
 </template>
 
 <script>
-import ProductosComponent from "../components/Productos.vue";
-
+import ProductosComponent from "../components/ProductosC.vue";
 export default {
     name: "ProductoComponent",
     components: {
