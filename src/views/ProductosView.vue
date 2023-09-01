@@ -74,10 +74,10 @@
                 </div>
                 <div classs="actualizar">
                     <box-icon name='revision'>Actualizar</box-icon>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </template>
 
 <!-- <script>
@@ -103,16 +103,16 @@ export default {
 }
 
 .precio {
+    display: block;
     background-color: #98e9c3;
     border-radius: 25px;
     border-color: #21e68a;
     border: solid 1px;
     font-size: 12px;
     margin-bottom: 0;
-
 }
 
-.comprar{
+.comprar {
     margin-top: 5px;
 }
 
@@ -125,11 +125,11 @@ button {
 
 }
 
-.actualizar{
+.actualizar {
     display: flex;
     align-items: center;
     align-content: center;
-  
+
 }
 
 .row {
