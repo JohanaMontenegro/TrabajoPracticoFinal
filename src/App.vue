@@ -21,7 +21,8 @@
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li router-link class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Home
+              </a>
             </li>
             <li router-link class="nav-item">
               <a class="nav-link active" aria-current="page" href="productos"
