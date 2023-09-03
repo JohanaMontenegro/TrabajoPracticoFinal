@@ -7,15 +7,8 @@
   <div class="row">
     <div class="col-11">
       <nav class="navbar navbar-expand-lg rounded border border-secondary my-3">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarToggler"
-          aria-controls="navbarToggler"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
@@ -25,28 +18,17 @@
               </a>
             </li>
             <li router-link class="nav-item">
-              <a class="nav-link active" aria-current="page" href="productos"
-                >Productos</a
-              >
+              <a class="nav-link active" aria-current="page" href="productos">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" arial-current="page" href="servicios"
-                >Servicios</a
-              >
+              <a class="nav-link active" arial-current="page" href="servicios">Servicios</a>
             </li>
             <li router-link class="nav-item">
-              <a class="nav-link active mt-3" aria-current="page" href="carrito"
-                ><box-icon name="cart"></box-icon
-              ></a>
+              <a class="nav-link active mt-3" aria-current="page" href="carrito"><box-icon name="cart"></box-icon></a>
             </li>
           </ul>
           <form class="d-flex" role="Buscar">
-            <input
-              class="form-control me-2"
-              type="Buscar"
-              placeholder="Buscar"
-              aria-label="Buscar"
-            />
+            <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar" />
             <button class="btn btn-primary" type="submit">Búsqueda</button>
           </form>
         </div>
@@ -62,20 +44,20 @@
           </section>
         </div>
         <div class="options">
-        <ol class="nav-link">
-          <li>
-            <box-icon type="solid" name="user-circle" title="Ingresar"></box-icon>
-            <a href="user">Ingresar</a>
-          </li>
-          <li>
-            <a href="black-mode">Modo Oscuro</a>
-            <box-icon name="toggle-left" title="Modo oscuro"></box-icon>
-          </li>
-        </ol>
+          <ol class="nav-link">
+            <li>
+              <box-icon type="solid" name="user-circle" title="Ingresar"></box-icon>
+              <a href="user">Ingresar</a>
+            </li>
+            <li>
+              <a href="black-mode">Modo Oscuro</a>
+              <box-icon name="toggle-left" title="Modo oscuro"></box-icon>
+            </li>
+          </ol>
+        </div>
       </div>
     </div>
   </div>
-</div>
   <router-view></router-view>
   <div class="row">
     <div class="col-11">
@@ -91,11 +73,7 @@
               <li><strong>Efectivo en Rapipago /PagoFácil</strong></li>
             </ol>
             <div class="d-flex flex-row d-inline-flex p-1 bd-highlight w-100">
-              <img
-                src="./assets/logosmp.png"
-                alt=""
-                class="rounded border border-tertiary"
-              />
+              <img src="./assets/logosmp.png" alt="" class="rounded border border-tertiary" />
             </div>
             <div id="envios" class="d-flex flex row d-inline-flex bd-highlight w-100">
               <h5 class="text-center col-4 mt-3"><strong>Formas de Envío</strong></h5>
@@ -141,7 +119,9 @@ li {
   padding: 15px;
   text-decoration: none;
   list-style-type: none;
-  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .v {
@@ -149,47 +129,49 @@ li {
   text-decoration: none;
   text-align: center;
 }
-.name img{
-  border-radius:13px ;
-  margin-top:200px;
-  display:flex;
+
+.name img {
+  border-radius: 13px;
+  margin-top: 200px;
+  display: flex;
   align-items: center;
-  margin-left:45px;
+  margin-left: 45px;
 }
 
 img {
-  aspect-ratio:4/4;
+  aspect-ratio: 4/4;
   margin-left: 100px;
   width: 110px;
 }
 
-.options{
-  margin-top:90px;
-  position:absolute;
-  padding:20px 30px;
-  top:80px;
+.options {
+  margin-top: 90px;
+  position: absolute;
+  padding: 20px 30px;
+  top: 80px;
 }
 
-.options a{
-display:block;
-position:relative;
+.options a {
+  display: block;
+  position: relative;
 }
 
- .options ol li a:hoover{
-  color:whithe;
+.options ol li a:hoover {
+  color: whithe;
 
- }
- .options li a {
+}
+
+.options li a {
   padding: 20px 0px;
-  display:flex;
-  align-items:center;
-  position:relative;
- }
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
- .options li a box-icon{
-  width:20px;
-  margin-right:20px;
- }
+.options li a box-icon {
+  width: 20px;
+  margin-right: 20px;
+}
 
 form {
   margin-right: 20px;
@@ -199,9 +181,9 @@ header {
   margin-left: 200px;
   width: 100%;
   height: 30px;
-  display:block;
+  display: block;
   align-items: center;
-  position:fixed;
+  position: fixed;
   top: 0;
   z-index: 200;
 }
@@ -214,6 +196,7 @@ header {
   align-items: center;
   transform: traslateX(10px);
 }
+
 a {
   margin: 0;
   padding: 0;
