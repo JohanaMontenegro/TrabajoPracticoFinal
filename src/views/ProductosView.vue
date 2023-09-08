@@ -115,13 +115,13 @@ export default {
 }
 
 .precio {
+    display: block;
     background-color: #98e9c3;
     border-radius: 25px;
     border-color: #21e68a;
     border: solid 1px;
     font-size: 12px;
     margin-bottom: 0;
-
 }
 
 .precio>p {
