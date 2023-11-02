@@ -7,42 +7,36 @@
 <script>
 
 
-import ProductosCard from './ProductosCard.vue';
+import CelularesCard from './CelularesCard.vue';
 
 export default {
-    name: "ProductosComponent",
+    name: "CelularesComponent",
     props: {
         msg: String
     },
     components: {
-        ProductosCard
+        CelularesCard
     },
  
     data() {
         return {
-            productos: [],
+            cellphone: [],
             filtros: [],
             actualizar: false,
         }
     },
     methods: {
         async loadAPI() {
-            return fetch("https://6449ca06a8370fb3213e14b1.mockapi.io/producto/producto")
+            return fetch("https://653f0e2e9e8bd3be29dfe395.mockapi.io/cellphone")
                 .then((response) => response.json())
-                .then((producto) => {
-                    this.productos = producto;
-                    console.log (this.productos)
-                    console.log (this.productos[1].stock)
+                .then((cellphone) => {
+                    this.cellphone = cellphone;
+                    console.log (this.cellphone)
+                    console.log ("aida")
+                    console.log (this.cellphone[1].stock)
                 });
         }
-
-
-
-
-
-
     },
-
     mounted() {
         this.loadAPI();
     },

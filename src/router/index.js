@@ -3,6 +3,7 @@ import HomeView from "@/views/HomeView.vue";
 import Productos from "@/views/ProductosView.vue";
 import Servicios from "@/views/ServiciosView.vue";
 import ComprasProductosView from "@/views/ComprasProductosView.vue"
+import CelularesView from"@/views/CelularesView.vue"
 
 const routes = [
   {
@@ -24,8 +25,13 @@ const routes = [
   {
     path: "/carrito",
     name: "carrito",
-    component: ComprasProductosView
-  },
+   component: ComprasProductosView
+  }, 
+  {
+  path: "/celulares",
+  name: "Celulares",
+ component: CelularesView
+},
 ];
 const router = createRouter({
   history: createWebHistory(),
