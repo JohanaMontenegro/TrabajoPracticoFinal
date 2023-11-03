@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style scoped>
-.card h-100 {
+.card{
   display: flex;
   float: inline-start;
   background: rgb(245, 248, 248);
@@ -60,5 +60,7 @@ export default {
 #card img {
   max-width: 220px;
   margin: auto;
-}
+} 
+
+
 </style>

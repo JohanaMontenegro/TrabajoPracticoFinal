@@ -20,7 +20,7 @@
           </li>
         </div>
 
-        <div class="card-group">
+        <div class="card-group w-100">
           <ProductosComponent></ProductosComponent>
         </div>
         <div class="row custom-div col-11"></div>
@@ -35,33 +35,21 @@
 <script>
 import ProductosComponent from "../components/ProductosC.vue";
 export default {
-  name: "ProductoComponent",
+  name: "ProductosView",
   components: {
     ProductosComponent,
   },
 };
 </script>
--->
 
 <style scoped>
-#contents {
+/* #contents {
   border-color: 4px solid #0c98b1;
   margin-left: -40px;
   margin-right: 40px;
   text-align: center;
 }
 
-#card {
-  margin: top 30px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-bottom: 32px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  grid-gap: 30px;
-  grid-row-gap: 30px;
-  width: 100%;
-  text-transform: uppercase;
-}
 .row {
   justify-content: center;
 }
@@ -89,15 +77,12 @@ a .nav-item-active {
 
 .card-group {
   margin-top: 80px;
-  max-width: 1200px;
   padding: 10px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 17px;
   float: inline-start;
   text-decoration: none;
-  contain: paint;
-}
+} */
 </style>
