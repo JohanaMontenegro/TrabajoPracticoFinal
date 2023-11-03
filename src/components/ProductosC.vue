@@ -1,4 +1,4 @@
-<template>
+lear<template>
     <div>
         <!-- <ProductosCard v-for="producto in productos" :key="producto.id" :producto="producto" @actualizarProducto="actualizarProducto($event)" :actualizar=this.actualizar></ProductosCard> -->
         <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
@@ -27,7 +27,7 @@
                             aria-expanded="false">
                             <i class="fs-5 bi-bootstrap"></i><span class="ms-1 d-none d-sm-inline">Bootstrap</span>
                         </a>
-                        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdown">
+                        <!-- <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdown">
                             <li><a class="dropdown-item" href="#">New project...</a></li>
                             <li><a class="dropdown-item" href="#">Settings</a></li>
                             <li>
@@ -35,7 +35,7 @@
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Sign out</a></li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li>
                         <a href="#" class="nav-link text-truncate">
@@ -87,7 +87,7 @@
 
 <script>
 
-import ProductosCard from './ProductosCard.vue';
+// import ProductosCard from './ProductosCard.vue';
 
 export default {
     name: "ProductosComponent",
@@ -95,7 +95,7 @@ export default {
         msg: String
     },
     components: {
-        ProductosCard
+        // ProductosCard
     },
     data() {
         return {
