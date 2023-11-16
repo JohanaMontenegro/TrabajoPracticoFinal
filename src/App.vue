@@ -78,6 +78,7 @@
       </div>
 
       <div class="options">
+      
         <ul class="nav-link">
           <li>
             <box-icon type="solid" name="user-circle" title="Ingresar"></box-icon>
@@ -165,20 +166,21 @@ section {
   background: rgba(216, 211, 211);
 }
 
-ul {
+ul.nav-link{
   display: flex;
   text-decoration: none;
   list-style-type: none;
+  position: fixed
+  ;
 }
 
-ul li {
+ul li{
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   padding: 15px;
   text-decoration: none;
   list-style-type: none;
   display: flex;
-  align-items: left;
   margin-left: -5px;
   text-transform: uppercase;
 }
@@ -214,7 +216,6 @@ ul li {
   padding: 20px 0px;
   display: flex;
   align-items: center;
-  position: absolute;
   width: 20px;
   margin-right: 20px;
   margin-left: -35px;

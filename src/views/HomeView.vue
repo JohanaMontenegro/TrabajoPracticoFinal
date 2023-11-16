@@ -115,8 +115,8 @@ p {
   text-transform: uppercase;
 }
 .carousel-item img {
-  width: 1150px;
-  height: 640px;
+  width: 100%;
+  height: 630px;
   display: block;
 }
 </style>
