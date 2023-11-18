@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <ServiciosCard v-for="servicio in servicios" :key="servicio.id" :servicio="servicio"
+        <ServiciosCard v-for="servicio in servicio" :key="servicio.id" :servicio="servicio"
             @actualizarServicios="actualizarServicios($event)" :actualizar=this.actualizar></ServiciosCard>
 
     </div>
@@ -20,19 +20,19 @@ export default {
     },
     data() {
         return {
-            Servicios: [],
+            Servicio: [],
             filtros: [],
             actualizar: false,
         }
     },
     methods: {
         async loadAPI() {
-            return fetch("http://localhost:3000/servicios")
+            return fetch("http://localhost:3000/servicio")
                 .then((response) => response.json())
                 .then((servicio) => {
                     console.log(servicio)
-                    this.servicios = servicio;
-                    console.log(this.servicios)
+                    this.servicio = servicio;
+                    console.log(this.servicio)
                 });
         }
     },
