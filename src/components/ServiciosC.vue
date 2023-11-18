@@ -33,7 +33,6 @@ export default {
                     console.log(servicio)
                     this.servicios = servicio;
                     console.log(this.servicios)
-                    console.log(this.servicios[1].stock)
                 });
         }
     },
