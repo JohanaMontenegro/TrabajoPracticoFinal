@@ -1,7 +1,7 @@
 <template>
     <div class="container">
-        <ServiciosCard v-for="servicio in servicio" :key="servicio.id" :servicio="servicio"
-            @actualizarServicios="actualizarServicios($event)" :actualizar=this.actualizar></ServiciosCard>
+        <ServiciosCard v-for="servicio in servicio" :key="servicio.idServicio" :servicio="servicio"
+            @actualizarServicio="actualizarServicio($event)" :actualizar=this.actualizar></ServiciosCard>
 
     </div>
 </template>

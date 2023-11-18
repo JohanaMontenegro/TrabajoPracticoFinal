@@ -4,7 +4,7 @@
             <div id="contents" class="rounded border border-primary">
                 <h1 class="animate__animated animate__zoomIn">Área de Servicios</h1>
                 <div class="card-group">
-                    <ServiciosComponent />
+                    <ServiciosComponent/>
                 </div>
                 <div class="row custom-div col-11"></div>
             </div>
