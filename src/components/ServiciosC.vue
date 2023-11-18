@@ -33,6 +33,7 @@ export default {
                     console.log(servicio)
                     this.servicio = servicio;
                     console.log(this.servicio)
+                    console.log(this.servicio[1].telefono)
                 });
         }
     },
