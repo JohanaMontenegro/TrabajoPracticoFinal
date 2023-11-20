@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
-import Productos from "@/views/ProductosView.vue";
-import Servicios from "@/views/ServiciosView.vue";
+import ProductosView from "@/views/ProductosView.vue";
+import ServiciosView from "@/views/ServiciosView.vue";
 import ComprasProductosView from "@/views/ComprasProductosView.vue"
 import CelularesView from"@/views/CelularesView.vue"
 
@@ -14,13 +14,13 @@ const routes = [
  
   {
     path: "/productos",
-    name: "Productos",
-    component: Productos,
+    name: "productos",
+    component: ProductosView,
   },
    {
     path: "/servicios",
     name: "servicios",
-    component: Servicios,
+    component: ServiciosView,
   },
   {
     path: "/carrito",
@@ -29,7 +29,7 @@ const routes = [
   }, 
   {
   path: "/celulares",
-  name: "Celulares",
+  name: "celulares",
  component: CelularesView
 },
 ];

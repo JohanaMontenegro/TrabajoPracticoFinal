@@ -6,7 +6,7 @@
 
         <div class="row2">
           <li router-link class="nav-item">
-            <a class="nav-link active" aria-current="page" href="Computación"
+            <a class="nav-link active" aria-current="page" href="computación"
               >Computación</a
             >
           </li>
@@ -21,7 +21,8 @@
         </div>
 
         <div class="card-group">
-          <ProductosComponent/>
+          <ProductosComponent />
+          <router-view></router-view>
         </div>
         <div class="row custom-div col-11"></div>
       </div>
@@ -36,12 +37,11 @@
 import ProductosComponent from "../components/ProductosC.vue";
 export default {
   name: "ProductosView",
-  components: {
+  component: {
     ProductosComponent,
   },
 };
 </script>
--->
 
 <style scoped>
 #contents {
@@ -52,7 +52,7 @@ export default {
 }
 
 #card {
-  height:100%;
+  height: 100%;
   margin: top 30px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-bottom: 32px;
@@ -87,13 +87,12 @@ a .nav-item-active {
   margin-top: 80px;
   max-width: 1200px;
   padding: 10px;
-  margin:0;
+  margin: 0;
   display: flex;
   justify-content: space-between;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 17px;
   float: inline-start;
   text-decoration: none;
-  contain: paint;
 }
 </style>

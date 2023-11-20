@@ -1,14 +1,15 @@
 <template>
+ <ComprasProductosView/>
 </template>
 <script>
-import CompraProductosView from "../views/ComprasProductos.vue";
+import ComprasProductosView from "../views/ComprasProductos.vue";
 
 export default {
   name: "ComprasProductosView",
   props: {
     msg: String,
   },
-  components: { CompraProductosView},
+  components: { ComprasProductosView},
 
   data() {
     return {
