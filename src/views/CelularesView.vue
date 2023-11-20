@@ -3,6 +3,7 @@
     <div class="col-11">
       <div id="contents" class="rounded border border-primary">
         <h4>Celulares</h4>
+        <NavBarComponent />
           <CelularesComponent/>
         <div class="row custom-div col-11"></div>
       </div>
@@ -11,12 +12,14 @@
 </template>
 
 <script>
+import NavBarComponent from "@/components/NavBarC.vue";
 import CelularesComponent from "../components/CelularesC.vue";
 export default {
   name: "CelularesView",
-  component: {
+  components: {
     CelularesComponent,
-  },
+    NavBarComponent
+},
 };
 </script>
 <style scoped>

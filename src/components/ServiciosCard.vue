@@ -5,7 +5,7 @@
       <img :src="servicio.urlImagen" alt="imagen" class="card-img-top" />
       <div class="card-body">
         <p class="card-text">{{ servicio.descripcion }}</p>
-        <p class="card-text"><strong>${{ servicio.telefono }}</strong></p>
+        <p class="card-text"><strong>Tel: {{ servicio.telefono }}</strong></p>
       </div>
       <button @click="Consultar">Consultar</button>
     </div>

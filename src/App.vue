@@ -78,21 +78,15 @@
       </div>
 
       <div class="options">
-      
         <ul class="nav-link">
           <li>
             <box-icon type="solid" name="user-circle" title="Ingresar"></box-icon>
             <a href="user">Ingresar</a>
           </li>
-          <li>
-            <a href="black-mode">Modo Oscuro</a>
-            <box-icon name="toggle-left" title="Modo oscuro"></box-icon>
-          </li>
         </ul>
       </div>
     </div>
   </div>
-
   <router-view></router-view>
   <footer>
     <div class="row">
@@ -140,16 +134,15 @@ export default {
 </script>
 
 <style scoped>
-
-footer ol{
-list-style-type:none;
-float:inline-start;
-margin-bottom: 12px;
-padding:10px 60px 0 40px
+footer ol {
+  list-style-type: none;
+  float: inline-start;
+  margin-bottom: 12px;
+  padding: 10px 60px 0 40px;
 }
 
-footer ol li{
-  width:25em;
+footer ol li {
+  width: 25em;
   text-transform: uppercase;
   text-align: center;
   margin-left: -50px;
@@ -166,15 +159,14 @@ section {
   background: rgba(216, 211, 211);
 }
 
-ul.nav-link{
+ul.nav-link {
   display: flex;
   text-decoration: none;
   list-style-type: none;
-  position: fixed
-  ;
+  position: fixed;
 }
 
-ul li{
+ul li {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 20px;
   padding: 15px;
@@ -191,19 +183,18 @@ ul li{
   text-align: center;
 }
 
-.options ul li{
-  display:flex;
- float:left;
-  align-content:center;
+.options ul li {
+  display: flex;
+  float: left;
+  align-content: center;
   margin-top: -20px;
   position: relative;
   padding: -20px 20px;
   top: 100px;
-  
 }
 
 .options a {
-  display:flex;
+  display: flex;
   position: absolute;
   transition: color 300ms;
 }
@@ -290,7 +281,6 @@ nav {
 #content {
   background-color: rgb(50, 190, 173);
   margin-top: 20px;
-
 }
 
 .logoc img {
@@ -301,5 +291,4 @@ nav {
   margin-left: 20px;
   margin-top: 10px;
 }
-
 </style>

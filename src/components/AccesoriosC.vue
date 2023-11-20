@@ -14,7 +14,7 @@
 import ProductosCard from "../components/ProductosCard.vue";
 
 export default {
-  name: "CelularesComponent",
+  name: "AccesoriosComponent",
   props: {
     msg: String,
   },
@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     async loadAPI() {
-      return fetch("http://localhost:3000/productos/celulares")
+      return fetch("http://localhost:3000/productos/accesorios")
         .then((response) => response.json())
         .then((producto) => {
           console.log(producto);

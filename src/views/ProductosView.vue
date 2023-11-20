@@ -3,26 +3,9 @@
     <div class="col-11">
       <div id="contents" class="rounded border border-primary">
         <h1 class="animate__animated animate__zoomIn">Productos</h1>
-
-        <div class="row2">
-          <li router-link class="nav-item">
-            <a class="nav-link active" aria-current="page" href="computación"
-              >Computación</a
-            >
-          </li>
-          <li router-link class="nav-item">
-            <a class="nav-link active" aria-current="page" href="celulares">Celulares</a>
-          </li>
-          <li router-link class="nav-item">
-            <a class="nav-link active" aria-current="page" href="accesorios"
-              >Accesorios</a
-            >
-          </li>
-        </div>
-
+        <NavBarComponent />
         <div class="card-group">
           <ProductosComponent />
-          <router-view></router-view>
         </div>
         <div class="row custom-div col-11"></div>
       </div>
@@ -34,11 +17,14 @@
 </template>
 
 <script>
+import NavBarComponent from "../components/NavBarC.vue";
+
 import ProductosComponent from "../components/ProductosC.vue";
 export default {
   name: "ProductosView",
-  component: {
+  components: {
     ProductosComponent,
+    NavBarComponent,
   },
 };
 </script>
@@ -46,8 +32,8 @@ export default {
 <style scoped>
 #contents {
   border-color: 4px solid #0c98b1;
-  margin-left: -40px;
-  margin-right: 40px;
+  margin-left: -55px;
+  margin-right: 55px;
   text-align: center;
 }
 

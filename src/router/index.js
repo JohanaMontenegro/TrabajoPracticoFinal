@@ -3,21 +3,24 @@ import HomeView from "@/views/HomeView.vue";
 import ProductosView from "@/views/ProductosView.vue";
 import ServiciosView from "@/views/ServiciosView.vue";
 import ComprasProductosView from "@/views/ComprasProductosView.vue"
-import CelularesView from"@/views/CelularesView.vue"
+import CelularesView from "@/views/CelularesView.vue"
+import ComputacionView from "@/views/ComputacionView.vue"
+import AccesoriosView from "@/views/AccesoriosView.vue"
+
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: HomeView
   },
- 
+
   {
     path: "/productos",
     name: "productos",
     component: ProductosView,
   },
-   {
+  {
     path: "/servicios",
     name: "servicios",
     component: ServiciosView,
@@ -25,13 +28,23 @@ const routes = [
   {
     path: "/carrito",
     name: "carrito",
-   component: ComprasProductosView
-  }, 
+    component: ComprasProductosView
+  },
   {
-  path: "/celulares",
-  name: "celulares",
- component: CelularesView
-},
+    path: "/computacion",
+    name: "computacion",
+    component: ComputacionView
+  },
+  {
+    path: "/accesorios",
+    name: "accesorios",
+    component: AccesoriosView
+  },
+  {
+    path: "/celulares",
+    name: "celulares",
+    component: CelularesView
+  },
 ];
 const router = createRouter({
   history: createWebHistory(),

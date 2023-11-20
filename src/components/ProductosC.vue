@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="contenedor2">
     <ProductosCard
       v-for="producto in productos"
       :key="producto.id"
@@ -40,15 +40,15 @@ export default {
         });
     },
   },
-  
   mounted() {
     this.loadAPI();
   },
 };
 </script>
 <style scoped>
-.container {
+.contenedor2 {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 </style>
