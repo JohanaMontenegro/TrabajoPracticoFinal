@@ -79,9 +79,9 @@
 
       <div class="options">
         <ul class="nav-link">
-          <li>
+          <li router-link>
             <box-icon type="solid" name="user-circle" title="Ingresar"></box-icon>
-            <a href="user">Ingresar</a>
+            <a class= "nav-link active" arial-current="page" href="ingesar">Ingresar</a>
           </li>
         </ul>
       </div>
