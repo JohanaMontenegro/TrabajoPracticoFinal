@@ -81,7 +81,7 @@
         <ul class="nav-link">
           <li>
             <box-icon type="solid" name="user-circle" title="Ingresar"></box-icon>
-            <a href="user">Ingresar</a>
+            <a href="ingresar">Ingresar</a>
           </li>
         </ul>
       </div>
