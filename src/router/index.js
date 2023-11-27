@@ -7,7 +7,6 @@ import CelularesView from "@/views/CelularesView.vue"
 import ComputacionView from "@/views/ComputacionView.vue"
 import AccesoriosView from "@/views/AccesoriosView.vue"
 import IngresarView from "@/views/IngresarView"
-import RegisterView from "@/views/RegisterView"
 
 const routes = [
   {
@@ -20,12 +19,6 @@ const routes = [
     path: '/ingresar',
     name: 'ingresar',
     component: IngresarView
-  },
-
-  {
-    path: '/register',
-    name: 'register',
-    component: RegisterView
   },
 
   {

@@ -1,19 +1,16 @@
 <template>
- <ComprasProductosView/>
-</template>
+ <h3>Carrito de Compras</h3>
+ </template>
 <script>
-import ComprasProductosView from "../views/ComprasProductos.vue";
 
 export default {
-  name: "ComprasProductosView",
+  name: "ComprasProductos",
   props: {
     msg: String,
   },
-  components: { ComprasProductosView},
-
   data() {
     return {
-      Producto: [],
+      productos: [],
       actualizar:false,
     };
   },
