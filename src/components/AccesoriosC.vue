@@ -51,4 +51,8 @@ export default {
   display: flex;
   flex-wrap: wrap;
 }
+p{
+  display: flex;
+}
+
 </style>

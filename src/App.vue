@@ -95,25 +95,25 @@
           <li>
             <h5><strong>Medios de Pago Habilitados</strong></h5>
           </li>
-          <li><strong>Tarjetas de Crédito y Debito</strong></li>
-          <li><strong>Transferencia Bancaria</strong></li>
-          <li><strong>Efectivo en Rapipago /PagoFácil</strong></li>
+          <li>Tarjetas de Crédito y Débito</li>
+          <li>Transferencia Bancaria</li>
+          <li>Efectivo en Rapipago /PagoFácil</li>
         </ol>
         <ol class="text-center col-4 mt-3">
           <li>
             <h5><strong>Formas de Envío</strong></h5>
           </li>
-          <li><strong>MercadoEnvios</strong></li>
-          <li><strong>Correo Argentino</strong></li>
-          <li><strong>Retiro en Sucursal</strong></li>
+          <li>MercadoEnvios</li>
+          <li>Correo Argentino</li>
+          <li>Retiro en Sucursal</li>
         </ol>
         <ol class="text-center col-4 mt-3">
           <li>
-            <h5><strong>Area de servicios</strong></h5>
+            <h5><strong>Área de servicios</strong></h5>
           </li>
-          <li><strong>Servicio tecnico</strong></li>
-          <li><strong>Reparaciones</strong></li>
-          <li><strong>Venta Mayorista de insumos</strong></li>
+          <li>Servicio técnico</li>
+          <li>Reparaciones</li>
+          <li>Venta Mayorista de insumos</li>
         </ol>
       </div>
     </div>
@@ -134,19 +134,25 @@ export default {
 </script>
 
 <style scoped>
+footer{
+  margin-left: 15px;
+  margin-right: 6px;
+  justify-content: center;
+}
+
 footer ol {
   list-style-type: none;
   float: inline-start;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   padding: 10px 60px 0 40px;
 }
 
 footer ol li {
   width: 25em;
-  text-transform: uppercase;
+  text-transform:capitalize;
   text-align: center;
-  margin-left: -50px;
-}
+  margin-left: -30px;
+  font-size: 19px;}
 
 section {
   text-decoration: none;
@@ -270,7 +276,8 @@ i {
 
 .row {
   display: flex;
-  margin-left: 240px;
+  margin-left: 250px;
+  margin-right:13px;
   margin-top: 20px;
 }
 

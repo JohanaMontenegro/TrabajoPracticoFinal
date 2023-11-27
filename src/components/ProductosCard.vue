@@ -7,9 +7,15 @@
       <div class="card-body">
         <h4 class="card-title">{{ producto.nombre }}</h4>
         <p class="card-text">{{ producto.descripcion }}</p>
-        <p class="card-text"><strong>${{ producto.precio }}</strong></p>
+        <div class="card-textp">
+          <p>
+            <strong>${{ producto.precio }}</strong>
+          </p>
+        </div>
       </div>
-      <button @click="Comprar">Comprar</button>
+      <div class="compra">
+        <button @click="Comprar">Comprar</button>
+      </div>
     </div>
   </div>
 </template>
@@ -17,7 +23,7 @@
 <script>
 export default {
   name: "ProductosCard",
- props: ["producto"],
+  props: ["producto"],
 };
 </script>
 
@@ -25,7 +31,7 @@ export default {
 #card {
   font-size: 20px;
   width: 28%;
-  
+
   margin-right: 10px;
   margin-left: 35px;
   float: inline-start;
@@ -36,16 +42,27 @@ export default {
   margin-top: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
-.card{
+.card-body {
+  flex: 0 1 auto;
+}
+.card {
   height: 100%;
 }
+
+.compra{
+  margin-bottom: 10px;
+}
+
 h4 {
   text-transform: uppercase;
 }
 
 #card img {
-  max-width: 220px;
+  max-width: 200px;
   margin: auto;
 }
+ .compra button{
+  border-radius:8px;
+  background-color:rgb(56, 185, 196)
+ }
 </style>

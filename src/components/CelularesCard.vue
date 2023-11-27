@@ -43,4 +43,9 @@ export default {
   max-width: 220px;
   margin: auto;
 }
+
+p{
+  display: flex;
+}
+
 </style>

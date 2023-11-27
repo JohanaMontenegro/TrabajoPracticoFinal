@@ -119,4 +119,8 @@ p {
   height: 630px;
   display: block;
 }
+#main-home{
+  margin-left:10px;
+  
+}
 </style>

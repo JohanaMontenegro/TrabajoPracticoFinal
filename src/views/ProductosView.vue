@@ -35,6 +35,9 @@ export default {
   margin-left: -55px;
   margin-right: 55px;
   text-align: center;
+  justify-content: center;
+  justify-content: space-between;
+
 }
 
 #card {
@@ -43,11 +46,12 @@ export default {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-bottom: 32px;
   text-transform: uppercase;
+  display:flex;
 }
 .row {
   justify-content: center;
 }
-.row2 li {
+.row li {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 17px;
   justify-content: center;
@@ -80,5 +84,8 @@ a .nav-item-active {
   font-size: 17px;
   float: inline-start;
   text-decoration: none;
+}
+#card button{
+  padding:0%;
 }
 </style>
