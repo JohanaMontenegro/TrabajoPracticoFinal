@@ -45,11 +45,12 @@ export default {
   },
 };
 </script>
+
 <style scoped>
 .contenedor2 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-left:70px;
+  margin-left: 70px;
 }
 </style>

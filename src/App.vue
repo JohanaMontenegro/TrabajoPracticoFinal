@@ -25,34 +25,36 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li router-link class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home </a>
-            </li>
-            <li router-link class="nav-item">
-              <a class="nav-link active" aria-current="page" href="productos"
-                >Productos</a
+            <li role="presentation">
+              <router-link to="/" active-class="menuActivo" title="home"
+                >Home</router-link
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" arial-current="page" href="servicios"
-                >Servicios</a
+            <li role="presentation">
+              <router-link to="/productos" active-class="menuActivo" title="productos"
+                >Productos</router-link
               >
             </li>
-            <li router-link class="nav-item">
-              <a class="nav-link active mt-3" aria-current="page" href="carrito"
-                ><box-icon name="cart"></box-icon
-              ></a>
+            <li role="presentation">
+              <router-link to="/servicios" active-class="menuActivo" title="servicios"
+                >Servicios</router-link
+              >
+            </li>
+            <li role="presentation">
+              <router-link to="/carrito" active-class="menuActivo" title="carrito">
+                <box-icon name="cart"></box-icon
+              ></router-link>
             </li>
           </ul>
-          <form class="d-flex" role="Buscar">
-            <input
-              class="form-control me-2"
+<!-- <form class="d-flex" role="Buscar"> -->
+            <!-- <input -->
+              <!-- class="form-control me-2"
               type="Buscar"
               placeholder="Buscar"
               aria-label="Buscar"
             />
             <button class="btn btn-primary" type="submit">Búsqueda</button>
-          </form>
+          </form> -->
         </div>
       </nav>
     </div>
@@ -79,7 +81,7 @@
 
       <div class="options">
         <ul class="nav-link">
-          <li>
+          <li router-link>
             <box-icon type="solid" name="user-circle" title="Ingresar"></box-icon>
             <a href="ingresar">Ingresar</a>
           </li>
@@ -134,7 +136,7 @@ export default {
 </script>
 
 <style scoped>
-footer{
+footer {
   margin-left: 15px;
   margin-right: 6px;
   justify-content: center;
@@ -149,12 +151,14 @@ footer ol {
 
 footer ol li {
   width: 25em;
-  text-transform:capitalize;
+  text-transform: capitalize;
   text-align: center;
   margin-left: -30px;
-  font-size: 19px;}
+  font-size: 19px;
+}
 
 section {
+  display:flex;
   text-decoration: none;
   list-style-type: none;
   align-items: center;
@@ -170,6 +174,7 @@ ul.nav-link {
   text-decoration: none;
   list-style-type: none;
   position: fixed;
+  justify-content: space-evenly;
 }
 
 ul li {
@@ -203,6 +208,7 @@ ul li {
   display: flex;
   position: absolute;
   transition: color 300ms;
+  justify-content:space-evenly;
 }
 
 .options a:hoover {
@@ -277,7 +283,7 @@ i {
 .row {
   display: flex;
   margin-left: 250px;
-  margin-right:13px;
+  margin-right: 13px;
   margin-top: 20px;
 }
 

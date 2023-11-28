@@ -1,14 +1,8 @@
 <template>
-  <div class="row">
-    <div class="col-11">
       <LoginComponent />
-      <RegisterComponent />
-    </div>
-  </div>
-</template>
+   </template>
 
 <script>
-import RegisterComponent from "@/components/RegisterC.vue";
 import LoginComponent from "@/components/LoginC.vue";
 export default {
   name: "IngresarView",
@@ -17,7 +11,6 @@ export default {
   },
   components: {
     LoginComponent,
-    RegisterComponent,
   },
 };
 </script>

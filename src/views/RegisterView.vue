@@ -1,14 +1,12 @@
 <template>
-  <div class="row">
-    <div class="col-11">
-      <div id="contents" class="rounded border border-primary">
-        <h5>Registrate ingresando tus datos</h5>
-      </div>
-    </div>
-  </div>
+        <RegisterComponent />
 </template>
 <script>
+import RegisterComponent from "../components/RegisterC.vue";
 export default {
   name: "RegisterView",
+  components: {
+    RegisterComponent,
+  },
 };
 </script>

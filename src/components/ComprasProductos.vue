@@ -3,7 +3,6 @@
     <div class="col-11">
       <div id="contents" class="rounded border border-primary">
         <h2>Carrito de Compras</h2>
-        <ComprasProductos />
         <ul>
           <li v-for="producto in productos" :key="producto.id">
             {{ producto.nombre }} - ${{ producto.precio }}
@@ -29,9 +28,6 @@
 
 export default {
   name: "ComprasProductos",
-  props: {
-    msg: String,
-  },
   data() {
     return {
       productos: [],
@@ -60,11 +56,10 @@ export default {
     },
   },
 };
-
 </script>
 
 <style scoped>
-h2{
+h2 {
   text-align: center;
 }
 </style>

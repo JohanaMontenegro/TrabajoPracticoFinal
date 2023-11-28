@@ -9,9 +9,6 @@
         </div>
         <div class="row custom-div col-11"></div>
       </div>
-      <div classs="actualizar">
-        <box-icon name="revision">Actualizar</box-icon>
-      </div>
     </div>
   </div>
 </template>

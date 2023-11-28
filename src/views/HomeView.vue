@@ -1,7 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-11">
-      <div id="main-home" class="justify-content-center">
+      <div id="main-home" class="justify-content-center col-11">
         <div id="homeContent" class="rounded border border-primary">
           <div id="carousel-captions" class="carousel slide">
             <div class="carousel-inner">
@@ -102,7 +101,6 @@
         </div>
       </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -119,6 +117,8 @@ export default {
 
 #homeContent {
   background-color: rgb(50, 190, 173);
+  margin-left:-70px;
+  margin-right:70px
 }
 
 .carousel-inner,
