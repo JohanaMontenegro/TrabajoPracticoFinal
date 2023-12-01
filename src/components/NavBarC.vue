@@ -2,15 +2,15 @@
   <div class="row2">
 
     <li router-link class="nav-item">
-      <a class="nav-link active" aria-current="page" href="computacion">Computación</a>
+      <a class="nav-link active" aria-current="page" to="computacion">Computación</a>
     </li>
 
     <li router-link clas="nav-item">
-      <a class="nav-link active" aria-current="page" href="celulares">Celulares</a>
+      <a class="nav-link active" aria-current="page" to="celulares">Celulares</a>
     </li>
 
     <li router-link class="nav-item">
-      <a class="nav-link active" aria-current="page" href="accesorios">Accesorios</a>
+      <a class="nav-link active" aria-current="page" to="accesorios">Accesorios</a>
     </li>
 
   </div>
