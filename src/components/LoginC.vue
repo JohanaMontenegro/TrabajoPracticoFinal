@@ -17,11 +17,11 @@
                   <div id="label" clas="field justify-content-center">
                     <label class="label">Contraseña</label>
                     <div class="control mb-3">
-                      <input class="input" type="text" v-model="contraseña" />
+                      <input type="password" name="password" autocomplete="current-password" placeholder="password" id="id_password" v-model="contraseña"/>
                     </div>
                   </div>
                   <div class="button">
-              <button type="submit">Ingresar</button>
+              <a type="submit" href="/"><strong>Ingresar</strong></a>
             </div>
                 </div>
               </div>
@@ -59,7 +59,7 @@ export default {
 
 <style scoped>
 .register {
-  margin-top:50px;
+  margin-top:30px;
   margin-bottom: 25px;
   text-align: center;
   justify-content: center;
@@ -69,12 +69,12 @@ export default {
 h3,
 h5,
 p {
+  margin-top:10 px;
   text-align: center;
 }
 a {
   text-decoration: none;
   border-radius: 5px;
-  margin-bottom: 8px;
 }
 .boton{
   margin-bottom: 14px;
@@ -87,7 +87,7 @@ a {
 
 }
 #label{
-  margin-top:10px;
+  margin-top:15px;
   text-align: center;
   justify-content: center;
 }

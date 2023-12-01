@@ -117,8 +117,8 @@ export default {
 
 #homeContent {
   background-color: rgb(50, 190, 173);
-  margin-left:-70px;
-  margin-right:70px
+  margin-left:-55px;
+  margin-right:55px
 }
 
 .carousel-inner,

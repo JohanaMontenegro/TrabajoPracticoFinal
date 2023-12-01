@@ -31,7 +31,6 @@ export default {
 #card {
   font-size: 20px;
   width: 28%;
-
   margin-right: 10px;
   margin-left: 35px;
   float: inline-start;
@@ -39,6 +38,7 @@ export default {
   cursor: pointer;
   color: rgb(2, 2, 2);
   border: 1px solid rgb(179, 179, 179);
+  border-radius: 6px;
   margin-top: 20px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }

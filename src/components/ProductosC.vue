@@ -30,7 +30,7 @@ export default {
   },
   methods: {
     async loadAPI() {
-      return fetch("http://localhost:3000/productos")
+      return fetch("https://todoelectro-y4q0.onrender.com/productos")
         .then((response) => response.json())
         .then((producto) => {
           console.log(producto);

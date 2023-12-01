@@ -3,8 +3,9 @@
     <div class="col-11">
       <div id="contents" class="rounded border border-primary">
         <h3>Registrate ingresando tus datos</h3>
-        <form action="·" @submit.prevent="register">
-          <div clas="field justify-content-center">
+        <form action="·" @submit.prevent=register>
+
+          <div id="cont" class="field justify-content-center">
             <label class="label">Nombre</label>
             <div class="control">
               <input
@@ -14,28 +15,33 @@
                 v-model="nombre"
               />
 
-              <div clas="field justify-content-center">
+              <div id="cont" class="field justify-content-center">
                 <label class="label">Email</label>
                 <div class="control">
                   <input
                     class="input"
                     type="text"
-                    placeholder="ej.JuanV@Example.com"
+                    placeholder="ej.JuanV@example.com"
                     v-model="email"
                   />
 
-                  <div clas="field justify-content-center">
+                  <div id="cont" class="field justify-content-center">
                     <label class="label">Contraseña</label>
-                    <div class="control mb-3"></div>
-                    <input class="input" type="text" v-model="contraseña" />
+                    <div class="control"></div>
+                    <input
+                      type="password"
+                      name="password"
+                      autocomplete="current-password"
+                      placeholder="password"
+                      id="id_password"
+                      v-model="contraseña"
+                    />
                   </div>
                 </div>
               </div>
               <div class="button">
-              <button type="submit">Registrarme</button>
-            </div>
-
-              <alert v-if="error">{{ error }}</alert>
+              <a class="Justify-content-center"><strong>Registrarme</strong></a>
+              </div>
             </div>
           </div>
         </form>
@@ -54,7 +60,7 @@ export default {
     };
   },
   name: "RegisterComponent",
-}
+};
 </script>
 
 <style scoped>
@@ -64,9 +70,15 @@ export default {
   text-align: center;
   justify-content: center;
 }
-button{
-  
-  margin-top:10px;
-  margin-bottom:10px
+#cont{
+  margin-top: 15px;
+}
+a {
+  text-decoration: none;
+}
+.button{
+  cursor: pointer;
+  margin-bottom: 15px;  
+  margin-top: 30px;
 }
 </style>

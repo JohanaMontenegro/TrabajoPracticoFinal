@@ -2,13 +2,15 @@
   <div class="row">
     <div class="col-11">
       <div id="contents" class="rounded border border-primary">
+      <div id="title">
         <h4>Accesorios</h4>
+      </div>
         <NavBarComponent />
-          <AccesoriosComponent/>
+        <AccesoriosComponent />
         <div class="row custom-div col-11"></div>
       </div>
-        </div>
-      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -18,26 +20,17 @@ export default {
   name: "AccesoriosView",
   components: {
     AccesoriosComponent,
-    NavBarComponent
+    NavBarComponent,
   },
 };
 </script>
 <style scoped>
-
-.card-group {
-  margin-top: 80px;
-  max-width: 1200px;
-  padding: 10px;
-  margin:0;
-  display: flex;
-  justify-content: space-between;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 17px;
-  float: inline-start;
-  text-decoration: none;
+#title{
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
-h4{
+h4 {
   text-align: center;
 }
 
@@ -55,18 +48,13 @@ h4{
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.card{
+.card {
   height: 100%;
 }
-h4 {
-  text-transform: uppercase;
-}
-
 #card img {
   max-width: 220px;
-  margin: auto;;
+  margin: auto;
 }
-
 
 #contents {
   border-color: 4px solid #0c98b1;
@@ -74,7 +62,6 @@ h4 {
   margin-right: 55px;
   text-align: center;
   justify-content: space-between;
-
 }
 
 #card {
@@ -83,7 +70,7 @@ h4 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-bottom: 32px;
   text-transform: uppercase;
-  display:flex;
+  display: flex;
 }
 .row {
   justify-content: center;
@@ -122,7 +109,7 @@ a .nav-item-active {
   float: inline-start;
   text-decoration: none;
 }
-button{
+button {
   margin-top: 0%;
 }
 </style>

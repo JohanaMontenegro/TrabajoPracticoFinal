@@ -1,21 +1,15 @@
 <template>
-  <div class="row">
-    <div class="col-11">
-      <div id="contents" class="rounded border border-primary">
-        <ComprasProductos />
-      </div>
-    </div>
-  </div>
+  <ComprasProductos />
 </template>
 
 <script>
-import ComprasProductos from "../components/ComprasProductos.vue"
+import ComprasProductos from "../components/ComprasProductos.vue";
 export default {
   name: "ComprasView",
   components: {
-    ComprasProductos
-  }
-}
+    ComprasProductos,
+  },
+};
 </script>
 <style scoped>
 h2 {

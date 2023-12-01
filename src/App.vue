@@ -24,20 +24,20 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul id="navbar" class="navbar-nav me-auto mb-2 mb-lg-0">
             <li role="presentation">
               <router-link to="/" active-class="menuActivo" title="home"
-                >Home</router-link
+                ><strong>Home</strong></router-link
               >
             </li>
             <li role="presentation">
               <router-link to="/productos" active-class="menuActivo" title="productos"
-                >Productos</router-link
+                ><strong>Productos</strong></router-link
               >
             </li>
             <li role="presentation">
               <router-link to="/servicios" active-class="menuActivo" title="servicios"
-                >Servicios</router-link
+                ><strong>Servicios</strong></router-link
               >
             </li>
             <li role="presentation">
@@ -83,7 +83,7 @@
         <ul class="nav-link">
           <li router-link>
             <box-icon type="solid" name="user-circle" title="Ingresar"></box-icon>
-            <a href="ingresar">Ingresar</a>
+            <a href="ingresar"><strong>Ingresar</strong></a>
           </li>
         </ul>
       </div>
@@ -169,6 +169,9 @@ section {
   background: rgba(216, 211, 211);
 }
 
+#navbar{
+  justify-content: space-evenly;
+}
 ul.nav-link {
   display: flex;
   text-decoration: none;
@@ -212,7 +215,7 @@ ul li {
 }
 
 .options a:hoover {
-  color: rgb(105, 168, 250);
+  color: rgb(24, 27, 32);
 }
 
 .options i a {
@@ -304,4 +307,5 @@ nav {
   margin-left: 20px;
   margin-top: 10px;
 }
+
 </style>

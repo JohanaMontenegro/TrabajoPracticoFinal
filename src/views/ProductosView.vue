@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-11">
+    <div id="cont" class="col-11">
       <div id="contents" class="rounded border border-primary">
         <h1 class="animate__animated animate__zoomIn">Productos</h1>
         <NavBarComponent />
@@ -28,13 +28,14 @@ export default {
 
 <style scoped>
 #contents {
+  margin-bottom:20px;
+  margin-top:20px;
   border-color: 4px solid #0c98b1;
   margin-left: -55px;
   margin-right: 55px;
   text-align: center;
   justify-content: center;
   justify-content: space-between;
-
 }
 
 #card {
@@ -43,7 +44,7 @@ export default {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-bottom: 32px;
   text-transform: uppercase;
-  display:flex;
+  display: flex;
 }
 .row {
   justify-content: center;
@@ -82,7 +83,7 @@ a .nav-item-active {
   float: inline-start;
   text-decoration: none;
 }
-#card button{
-  padding:0%;
+#card button {
+  padding: 0%;
 }
 </style>

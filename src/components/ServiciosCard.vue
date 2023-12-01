@@ -8,6 +8,7 @@
         <p class="card-text"><strong>Tel: {{ servicio.telefono }}</strong></p>
       </div>
       <button @click="Consultar">Consultar</button>
+      
     </div>
   </div>
 </template>
@@ -23,7 +24,6 @@ export default {
 #card {
   font-size: 20px;
   width: 28%;
-
   margin-right: 10px;
   margin-left: 35px;
   float: inline-start;
@@ -47,4 +47,13 @@ h4 {
   max-width: 220px;
   margin: auto;
 }
+button{
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 15px;  
+  margin-top: 30px;
+  border-radius:8px;
+  background-color:rgb(56, 185, 196)
+}
+
 </style>
